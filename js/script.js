@@ -1,40 +1,29 @@
 'use strict';
 
+let money = prompt("Ваш бюджет на месяц?"),
+    time = prompt("Введите дату в формате YYYY-MM-DD");
 
-let something;
-console.log(something);
+let expenseItemOne = prompt("Введите обязательную статью расходов в этом месяце"),
+    expenseItemSecond = prompt("Введите обязательную статью расходов в этом месяце"),
+    priceOne = prompt("Во сколько обойдется?"),
+    priceSecond = prompt("Во сколько обойдется?");
 
-let person = {
-    name: "John",
-    age: 25,
-    isMarried: false
+let optionalExpenses = {},
+    income = [],
+    savings = false;
+
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {
+        expenseItemOne : priceOne,
+        expenseItemSecond : priceSecond
+    },
+    optionalExpenses,
+    income,
+    savings
 };
 
-console.log(person["name"]);
+console.log(appData);
 
-let arr = ["plum.png","apple.png","arrow.jpg"];
-
-console.log(arr[2]);
-
-// let answer = +prompt("Есть ли вым 18 лут?", "Да");
-
-// let answer = confirm("Are yor here?");
-
-// console.log(typeof(answer));
-
-// console.log(5 + +" - object");
-
-let incr = 10,
-    decr = 10;
-
-console.log(incr++);
-console.log(decr--);
-
-console.log(5%2);
-console.log("2" === 2);
-
-let isChecked = true,
-    isClose = false;
-
-console.log(isChecked || !isClose);
-
+alert( Math.round(money/30) );
