@@ -2,6 +2,31 @@
 
 let money, time;
 
+let startBtn = document.getElementById("start"),
+    budgetValue = document.getElementsByClassName("budget-value"),
+    dayBudgetValue = document.getElementsByClassName("daybudget-value"),
+    levelValue = document.getElementsByClassName("level-value"),
+    expensesValue = document.getElementsByClassName("expenses-value"),
+    optionalExpensesValue = document.getElementsByClassName("optionalexpenses-value"),
+    incomeValue = document.getElementsByClassName("income-value"),
+    monthaSavingValue = document.getElementsByClassName("monthsavings-value"),
+    yearSavingValue = document.getElementsByClassName("yearsavings-value"),
+
+    expensesItem = document.getElementsByClassName("expenses-item"),
+    buttonApproveOne = document.getElementsByTagName("button") [0],
+    buttonApproveSecond = document.getElementsByTagName("button") [1],
+    buttonСalculate = document.getElementsByTagName("button") [2],
+    optionalExpenses = document.querySelectorAll(".optionalexpenses-item"),
+
+    chooseIncome = document.querySelector(".choose-income"),
+    checkSavings = document.getElementById("#savings"),
+    chooseSum = document.querySelector(".choose-sum"),
+    choosePercent = document.querySelector(".choose-percent"),
+    yearValue = document.querySelector(".year-value"),
+    monthValue = document.querySelector(".month-value"),
+    dayValue = document.querySelector(".day-value");
+
+    console.log(divValue);
 
 function start() {
     money = +prompt("Ваш бюджет на месяц?");
@@ -122,29 +147,3 @@ console.log(appData);
 //         i--;
 //     }
 // } while (i < 2);
-
-// let options = {
-//     width: 1024,
-//     height: 1024,
-//     name: "test"
-// };
-
-// console.log(options.name);
-// options.bool = false;
-// options.colors = {
-//     border: "black",
-//     bg: "red"
-// };
-// delete options.bool;
-// console.log(options);
-
-// for (let key in options) {
-//     console.log('Свойство ' + key + ' имеет значение ' + options[key])
-// }
-// console.log(Object.keys(options).length);
-
-// let arr = ["first", 2, 3, "four", 5];
-
-// arr.forEach(function(item, i, mass){
-//     console.log(i + ': ' + item + " (массив : " + mass + ')');
-// });
